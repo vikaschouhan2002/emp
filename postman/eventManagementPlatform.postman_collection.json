@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "c11fcde6-2982-4d43-b018-ddef635aafcf",
+		"name": "eventManagementPlatform",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34332806"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4000/events",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"eventName\": \"Sample Event alok\",\r\n    \"eventDate\": \"2024-07-01T18:00:00.000Z\",\r\n    \"organizer\": \"John Doe\",\r\n    \"email\": \"johndoe@example.com\",\r\n    \"phone\": \"123-456-7890000000000000\",\r\n    \"location\": {\r\n        \"street\": \"123 Main St\",\r\n        \"city\": \"Sample City\",\r\n        \"state\": \"ChhhhhhhhhhhhhhA\",\r\n        \"zip\": \"12345\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/events/667bf5af9d4d4fcc11335a3d",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"eventName\": \"Event VIkas\",\r\n  \"eventDate\": \"2024-07-01T12:00:00.000Z\",\r\n  \"organizer\": \"Organizer Name\",\r\n  \"email\": \"organizear@example.com\",\r\n  \"phone\": \"+1234567890\",\r\n  \"location\": {\r\n    \"street\": \"123 Main St\",\r\n    \"city\": \"City\",\r\n    \"state\": \"State\",\r\n    \"zip\": \"12345\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/events/667bfd11f8dee32505e828f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"events",
+						"667bfd11f8dee32505e828f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/events/667bef7376b3aa4dc3d01bda",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/events/667bf8b1cb5707ba63b68d52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"events",
+						"667bf8b1cb5707ba63b68d52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4000/events/667bf5af9d4d4fcc11335a3d",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/events/667c0428f48ab25d704cdb8a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"events",
+						"667c0428f48ab25d704cdb8a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
